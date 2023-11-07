@@ -1,24 +1,6 @@
-# Foundry Template [![Open in Gitpod][gitpod-badge]][gitpod] [![Github Actions][gha-badge]][gha] [![Foundry][foundry-badge]][foundry] [![License: MIT][license-badge]][license]
+# Mint Contract
 
-[gitpod]: https://gitpod.io/#https://github.com/arein/mint-example
-[gitpod-badge]: https://img.shields.io/badge/Gitpod-Open%20in%20Gitpod-FFB45B?logo=gitpod
-[gha]: https://github.com/arein/mint-example/actions
-[gha-badge]: https://github.com/arein/mint-example/actions/workflows/ci.yml/badge.svg
-[foundry]: https://getfoundry.sh/
-[foundry-badge]: https://img.shields.io/badge/Built%20with-Foundry-FFDB1C.svg
-[license]: https://opensource.org/licenses/MIT
-[license-badge]: https://img.shields.io/badge/License-MIT-blue.svg
-
-A Foundry-based template for developing Solidity smart contracts, with sensible defaults.
-
-## What's Inside
-
-- [Forge](https://github.com/foundry-rs/foundry/blob/master/forge): compile, test, fuzz, format, and deploy smart
-  contracts
-- [Forge Std](https://github.com/foundry-rs/forge-std): collection of helpful contracts and cheatcodes for testing
-- [PRBTest](https://github.com/PaulRBerg/prb-test): modern collection of testing assertions and logging utilities
-- [Prettier](https://github.com/prettier/prettier): code formatter for non-Solidity files
-- [Solhint Community](https://github.com/solhint-community/solhint-community): linter for Solidity code
+`forge script script/Deploy.s.sol --rpc-url $POLYGON_RPC --broadcast --verify`
 
 ## Getting Started
 
