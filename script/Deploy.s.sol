@@ -9,6 +9,7 @@ import { BaseScript } from "./Base.s.sol";
 contract Deploy is BaseScript {
     function run() public broadcast returns (Mint mint) {
         address owner = msg.sender;
-        mint = new Mint(owner);
+        address usdcAddress = vm.parseAddress("0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174");
+        mint = new Mint(owner, usdcAddress);
     }
 }
